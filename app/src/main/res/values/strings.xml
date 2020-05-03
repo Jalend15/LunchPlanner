@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ihungry</string>
+    <string name="app_name">LunchPlanner</string>
     <string name="action_settings">Settings</string>
 
     <!-- TODO: Remove or change this placeholder text -->
@@ -7,9 +7,9 @@
     <string name="action_favorites">View Favorites</string>
     <string name="action_account">Account</string>
 
-    <string name="checkbox">com.example.mireysa.ihungry.checkbox</string>
-    <string name="username">com.example.mireysa.ihungry.username</string>
-    <string name="password">com.example.mireysa.ihungry.password</string>
+    <string name="checkbox">com.example.app.checkbox</string>
+    <string name="username">com.example.app.username</string>
+    <string name="password">com.example.app.password</string>
     <string name="tag_decision">Decision</string>
 
 </resources>
