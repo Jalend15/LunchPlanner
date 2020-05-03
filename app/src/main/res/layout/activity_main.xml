@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#919160"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".MainActivity"
+        tools:showIn="@layout/activity_main">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="#999965"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- Logo Image -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="419dp"
+                android:layout_centerHorizontal="true"
+                android:background="#999965"
+                app:srcCompat="@drawable/ihungry_logo"
+                tools:srcCompat="@drawable/images" />
+
+        </LinearLayout>
+
+
+        <!-- Empty view for the list -->
+        <RelativeLayout
+            android:id="@+id/empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+
+            <TextView
+                android:id="@+id/empty_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-medium"
+                android:paddingTop="195dp"
+                android:text="Confused on what to eat?"
+                android:textAppearance="?android:textAppearanceMedium"
+                app:fontFamily="@font/almendra_sc" />
+
+            <TextView
+                android:id="@+id/empty_subtitle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/empty_title_text"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif"
+                android:paddingTop="8dp"
+                android:paddingBottom="18dp"
+                android:text="Click on the Button to get Started"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#647887" />
+
+            <Button
+                android:id="@+id/exploreButton"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/empty_subtitle_text"
+                android:layout_centerHorizontal="true"
+                android:background="#AE4942"
+                android:includeFontPadding="false"
+                android:padding="10dp"
+                android:text="Plan My Meal"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#2D2F31" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

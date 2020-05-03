@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ihungry</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_favorites">View Favorites</string>
+    <string name="action_account">Account</string>
+
+    <string name="checkbox">com.example.mireysa.ihungry.checkbox</string>
+    <string name="username">com.example.mireysa.ihungry.username</string>
+    <string name="password">com.example.mireysa.ihungry.password</string>
+    <string name="tag_decision">Decision</string>
+
+</resources>

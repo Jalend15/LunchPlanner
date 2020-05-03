@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MilesFragment">
+
+    <RelativeLayout
+        android:id="@+id/empty_view"
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <TextView
+            android:id="@+id/location_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-medium"
+            android:paddingTop="165dp"
+            android:text="How Many Miles are You Willing to Travel?"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/location_select"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:paddingTop="8dp"
+            android:text="Use the slider to select your preference and Press 'Confirm' when you're done"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#A2AAB0" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:paddingTop="350dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <SeekBar
+                android:id="@+id/mileSeekBar"
+                android:layout_width="331dp"
+                android:layout_height="21dp"
+                android:max="50"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/mileTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/confirmMileButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorButton"
+                android:padding="10dp"
+                android:text="Confirm"
+                android:textColor="#fff"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
