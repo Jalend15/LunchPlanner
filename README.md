@@ -1,6 +1,5 @@
-# app15
-# app15
-Lunch Planner App
+
+#Lunch Planner App
 
 All the latest updates, details and usage instructions of the App are made available in the above repository.
 
